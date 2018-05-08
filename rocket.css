@@ -1,0 +1,184 @@
+body {
+	font-family: 'helvetica', 'arial', sans-serif;
+}
+
+.left{
+	background-color: aquamarine;
+	/* cant move more then nessary  ???? */
+	position: fixed;
+	/* 50 of the with of the browswer window */
+	width: 50%;
+	/*100% of the browswer window */
+	height: 100%;
+	/* top is going to be o ???*/
+	top:0;
+	/* also 0 ???? will stick to the right*/
+	left:0;
+}
+
+.interface {
+	text-align: center;
+	padding: 20px;
+
+}
+
+a.button {
+	display: inline-block;
+	background: white;
+	color: black;
+	padding: 20px /*(top)*/ 40px /*sides*/;
+	text-decoration: none;
+	border-radius: 10px;
+	text-transform: uppercase;
+	transition: color 300ms;
+	
+}
+
+/*button hover*/
+a:hover {
+	color: red
+}
+
+.right{
+	background-color: aliceblue;
+	/* cant move more then nessary  ???? */
+	position: fixed;
+	/* 50 of the with of the browswer window */
+	width: 50%;
+	/*100% of the browswer window */
+	height: 100%;
+	/* top is going to be o ???*/
+	top:0;
+	/* also 0 ???? will stick to the right*/
+	right:0;
+/* V (this) was missing and code didnt work*/
+}
+
+.ground{
+	background-color: green;
+	/*change this to the image and center center both y and x then make the changes or everything else */
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 20px;
+}
+
+/*use the google editor to find out where you want all of your photos so you have a visual representtion instead of guessing
+
+.nervous {
+	position: abosulte;
+	top: ;
+	bottom: 100px;
+	left : 100px;
+	background : url (''); no-repeate 0 0, 
+	width
+	height
+	margin-left: -2/width;
+	display: none;
+}
+
+.nervous.show{
+	
+}
+
+.cantwait{
+	position: abosulte;
+	top: 100px;
+	left : 100px;
+	background : url (''); no-repeate 0 0, 
+	width
+	height
+	display : none;
+}
+
+.cantwait.show{
+	
+}
+*/
+
+.rocket{
+	/* wheres my parent*/
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	width: 20px;
+	height: 100px;
+	background-color: blue;
+	/*1000 was way to fast add a 0*/
+	transition: bottom 10000ms;
+}
+
+/*.rocket
+          to add a photo in where your color is 
+change the width and night to match that of your image
+to center it add a nagitive margin of the width divided by two 
+change the background: url of your image and then no repeat of o for(or) center;
+nagitive numbers are a thing, use your chrome editor to find a happy place instead of boucing bacn and forth
+*/
+
+/*rocket background image
+body.body-state2 .rocket
+	change the bacgroung image src 
+
+body.body-state2 .rocket
+body.body-state2 .rocket
+	same
+
+body.body-state2 .rocket
+	same but adjust the width and hight to match 
+
+*/
+
+
+
+body.body-state1 .rocket {
+	transition: none;
+}
+
+body.body-state3 .rocket, 
+/*continutes the flyng*/
+body.body-state4 .rocket{
+	bottom: 1000px;
+}
+/*.rocket.flying{
+	bottom: 1000px;
+}*/
+
+/* we do not want them to all diplay at once no we so none will hide them till i need them.
+.state5 didnt need a comma*/
+.state1,
+.state2,
+.state3,
+.state4,
+.state5{
+	display: none;
+}
+
+/* too much code needed to be simplified
+.state3{
+	display: none;
+}
+
+.state4{
+	display: none;
+}
+
+.state5{
+	display: none;
+}*/
+
+/* */
+body.body-state1 .state1{display: block;}
+body.body-state2 .state2{display: block;}
+body.body-state3 .state3{display: block;}
+body.body-state4 .state4{display: block;}
+body.body-state5 .state5{display: block;}
+
+a{
+
+}
+
+a.button{
+
+}
